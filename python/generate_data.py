@@ -1,4 +1,3 @@
--- Active: 1772513591125@@127.0.0.1@5432@postgres
 import pandas as pd
 import numpy as np
 import random
