@@ -1,0 +1,73 @@
+## LinkedIn Trust–Churn Analysis Report
+
+### 1. Objective
+
+The objective of this analysis was to evaluate the impact of trust and safety mechanisms—specifically account restrictions and verification processes—on user churn and engagement. Additionally, an A/B experiment was analyzed to determine whether reducing friction in the restriction workflow improves user retention.
+
+---
+
+### 2. Key Findings
+
+#### 2.1 Impact of Account Restrictions on Churn
+
+The analysis indicates that users subjected to account restrictions exhibit significantly higher churn rates compared to non-restricted users. In multiple segments, restricted users demonstrate nearly double the churn rate. This suggests that the current restriction mechanisms may be overly aggressive or poorly timed, leading to unintended negative effects on legitimate users.
+
+---
+
+#### 2.2 Effect of Verification Friction on User Retention
+
+Verification friction, measured through the number of verification attempts and associated latency, is strongly correlated with increased churn. Users who undergo multiple verification attempts show the highest probability of disengagement. Additionally, higher latency in the verification process contributes to reduced session activity and shorter engagement duration. These findings indicate that friction in recovery flows acts as a major barrier to continued platform usage.
+
+---
+
+#### 2.3 A/B Experiment Results: Restriction Experience Optimization
+
+The A/B test comparing a strict restriction flow (Control Group A) with a reduced-friction experience (Treatment Group B) reveals that the treatment group performs better across key metrics. Users in the low-friction group demonstrate lower churn rates, higher session counts, and improved engagement levels. This suggests that optimizing the user experience during restriction handling can significantly improve retention outcomes without necessarily compromising trust mechanisms.
+
+---
+
+#### 2.4 Relationship Between Trust Score and Engagement
+
+A strong positive relationship is observed between trust score and user engagement. Users with higher trust scores tend to exhibit more frequent sessions, longer session durations, and lower churn rates. Conversely, users with lower trust scores show minimal engagement and a higher likelihood of churn. This indicates that trust signals are effective indicators of user quality and intent.
+
+---
+
+#### 2.5 Evidence of False Positive Restrictions
+
+The analysis identifies a subset of users with high trust scores and strong engagement patterns who were still subjected to account restrictions. This suggests the presence of false positives within the trust system. Restricting high-value users can lead to significant retention loss and negatively impact overall user experience.
+
+---
+
+#### 2.6 Combined Effect of Restriction and High Friction
+
+Users who experience both account restrictions and high verification friction represent the most vulnerable segment, exhibiting the highest churn rates across the dataset. This indicates a compounded negative effect where restrictive actions combined with poor recovery experience significantly accelerate user drop-off.
+
+---
+
+#### 2.7 Early Lifecycle Churn Behavior
+
+User activity patterns suggest that a substantial portion of churn occurs during the early lifecycle, particularly within the initial sessions after signup. This highlights the critical importance of first-time user experience, including onboarding and early trust interactions.
+
+---
+
+### 3. Business Recommendations
+
+Based on the findings, the following actions are recommended:
+
+1. Reduce verification friction by minimizing the number of required steps and improving response latency in verification workflows.
+
+2. Recalibrate restriction thresholds to reduce false positives, particularly for users exhibiting high trust and engagement signals.
+
+3. Expand the implementation of the low-friction experience tested in the A/B experiment, as it demonstrates clear improvements in retention and engagement.
+
+4. Introduce segmentation-based trust policies, where high-value users are subjected to less aggressive restrictions while maintaining strict controls for low-trust accounts.
+
+5. Enhance the onboarding and early user experience to minimize early-stage churn, especially in scenarios involving initial trust evaluations.
+
+---
+
+### 4. Conclusion
+
+The analysis highlights a critical trade-off between trust enforcement and user retention. While robust trust systems are essential for platform integrity, excessive friction and overly aggressive restrictions can lead to significant churn among legitimate users. Optimizing the balance between security and user experience is essential to ensure sustainable user growth and engagement.
+
+ 
